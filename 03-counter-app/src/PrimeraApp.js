@@ -3,9 +3,16 @@ import React from 'react';
 
 //functional components are better
 const PrimeraApp = () => {
-    return(
+
+    const saludo = {
+        nombre:'narri',
+        edad:26
+    };
+    const saludo1='Hola jeje'
+    return (
         <>
-            <h1>Hola Mundo</h1>
+            <h1> {saludo1} </h1>
+            {/* <pre>{JSON.stringify(saludo,null,3)}</pre> */}
             <p>aaaa</p>
         </>
     );
