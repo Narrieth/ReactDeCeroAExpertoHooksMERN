@@ -1,8 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 
 //functional components are better
-const PrimeraApp = ({saludo123='hola bebe'}) => {
+const PrimeraApp = ({saludo123}) => {
+
+
 
     const saludo = {
         nombre:'narri',
@@ -22,6 +25,10 @@ const PrimeraApp = ({saludo123='hola bebe'}) => {
             <p>aaaa</p>
         </>
     );
+}
+
+PrimeraApp.propTypes={
+    saludo123: PropTypes.string.isRequired
 }
 
 export default PrimeraApp;
