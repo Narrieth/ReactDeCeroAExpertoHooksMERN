@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 
 //functional components are better
-const PrimeraApp = ({saludo123}) => {
+const PrimeraApp = ({saludo123, subtitulo}) => {
 
 
 
@@ -19,6 +19,7 @@ const PrimeraApp = ({saludo123}) => {
     return (
         <>
             <h1> {saludo123} </h1>
+            <p>{subtitulo}</p>
             <pre>{JSON.stringify(saludo,null,3)}</pre>
             <h2> {array} </h2>
             <h3> {enteros} </h3>
@@ -30,5 +31,10 @@ const PrimeraApp = ({saludo123}) => {
 PrimeraApp.propTypes={
     saludo123: PropTypes.string.isRequired
 }
+
+PrimeraApp.defaultProps={
+    subtitulo:'soy un subtitulo'
+}
+
 
 export default PrimeraApp;
